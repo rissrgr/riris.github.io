@@ -1,18 +1,30 @@
 * {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   color: #444444;
-  font-family: sans-serif;
-  border-top: 10px solid #1098ad;
-  position: relative;
+  /* border-top: 10px solid #1098ad;
+  display: flex;
+  justify-content: center; */
 }
 
+.login-body,
+.index-body,
+.challenges-body {
+  /* color: #444444; */
+  border-top: 10px solid #1098ad;
+  display: flex;
+  justify-content: center;
+}
+
+.blog {
+  border-top: 5px solid #1098ad;
+}
 .container {
-  width: 1200px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -20,6 +32,7 @@ body {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
 nav {
@@ -42,6 +55,19 @@ aside {
   margin: 0 auto;
   margin-bottom: 50px;
   width: 500px;
+}
+
+.tengah {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+}
+
+.tempat-challenges {
+  background-color: #f2f2f2;
+  width: 800px;
+  padding: 20px 30px;
+  margin-bottom: 50px;
 }
 
 h1,
@@ -200,215 +226,208 @@ h1::first-letter {
   right: 0px;
 }
 
-*/ #roadmap {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
+.text {
+  color: #1098ad;
+}
+
+.tempat-warna {
+  background-color: #f7f7f7;
+  width: 800px;
+  padding: 30px 20px;
+}
+
+.judul-kontak {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.sub-contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name {
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
   width: 100%;
-}
-
-#roadmap td,
-#roadmap th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#roadmap tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-#roadmap tr:hover {
-  background-color: #ddd;
-}
-
-#roadmap th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #1098ad;
-  color: white;
-}
-
-#row {
-  background-color: #1098ad;
-}
-
-.author-box {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.author {
-  margin-bottom: 0;
-  margin-left: 15px;
-}
-
-.related-post {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.related-link {
-  font-weight: bold;
-}
-
-.related-link::link {
-  font-size: 17px;
-  font-weight: bold;
-  font-style: normal;
-  margin-bottom: 5px;
-  display: block;
-}
-
-.related-author {
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  font-style: italic;
-}
-
-aside {
-  width: 300px;
-  padding-top: 30px;
-}
-
-.related {
-  margin: 0;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
-/* CSS Grid Layout */
-.container {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  column-gap: 75px;
-  row-gap: 60px;
-  align-items: start;
-}
-
-.main-header {
-  margin-bottom: 0;
-
-  /* grid-column: 1 / span 2; */
-  grid-column: 1 / -1;
-}
-
-article {
-  margin-bottom: 0;
-}
-
-footer {
-  grid-column: 1/ -1;
-}
-
-/* CSS Grid Layout */
-.container {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  column-gap: 75px;
-  row-gap: 60px;
-}
-
-.main-header {
-  margin-bottom: 0;
-
-  /* grid-column: 1 / span 2; */
-  grid-column: 1 / -1;
-}
-
-input[type="text"] {
+#email {
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid black;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-input[type="text"],
-textarea {
+.tempat-opsi {
+  display: flex;
+  gap: 5px;
+}
+
+#message {
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid black;
 }
 
-input[type="submit"] {
+#warna-kirim {
   background-color: #1098ad;
-  color: white;
-  padding: 12px 20px;
-  margin: 8px 0;
   border: none;
-  cursor: pointer;
+  padding: 10px 40px;
   border-radius: 5px;
-  /* Menempatkan tombol di tengah */
-  grid-column: span 2; /* Mengambil dua kolom grid */
-  text-align: center; /* Mengatur teks di tengah */
+  color: white;
+  margin-top: 15px;
 }
 
-.radio-container {
+.lebar {
   display: flex;
-  align-items: center; /* Menyusun tombol radio secara vertikal tengah */
+  justify-content: center;
+  width: 800px;
+  /* background-color: #1098ad; */
 }
 
-/* CSS untuk mengatur radio container */
-.radio-container {
-  display: flex; /* Menggunakan Flexbox */
-  align-items: center; /* Menyusun elemen secara vertikal tengah */
-}
-
-/* Margin kanan antara setiap tombol radio dan label */
-.radio-container input[type="radio"] {
-  margin-right: 10px;
-}
-
-.container .kontak {
-  margin: 0px 0px 0px 450px;
-}
-
-.container .form {
-  margin: auto;
-  align-items: center;
-}
-
-/* Tambahkan gaya CSS di sini */
-
-.all-data-login {
-  display: flex;
-  gap: 20px;
-}
-
+table,
 form {
+  width: 100%;
+}
+
+.tabel-contact tr {
   display: flex;
   flex-direction: column;
 }
 
-label {
-  margin-bottom: 5px;
+.tabel-contact td {
+  margin-bottom: 20px;
 }
 
-input[type="text"],
-input[type="password"],
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid black;
+.kategoriku {
+  display: flex;
+  gap: 10px;
 }
 
-input[type="submit"] {
+.sub-article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+}
+
+.sub-blog {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.judul-blog {
+  margin-top: 50px;
+}
+
+.tabel td,
+th {
+  padding: 10px;
+}
+
+.tabel th {
   background-color: #1098ad;
   color: white;
-  padding: 12px 20px;
-  margin: 8px 0;
+}
+
+.tabel tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.kolom-kosong {
+  background-color: #1098ad;
+}
+
+.sub-challenges {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-challenges-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.judul-challenges,
+.judul-index {
+  margin-top: 50px;
+}
+
+.sub-login {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  /* background-color: #444444; */
+  /* flex-direction: column;
+  align-items: center; */
+}
+
+.tempat-login-register {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+}
+
+.tempat-login,
+.tempat-register {
+  width: 40%;
+}
+
+#pass {
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tombol {
+  background-color: #1098ad;
   border: none;
-  cursor: pointer;
+  padding: 10px 40px;
   border-radius: 5px;
+  color: white;
+  margin-top: 15px;
+}
+
+.pekerjaan {
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  margin-top: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.tempat-tombol {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-login div {
+  width: 100%;
+}
+
+.sub-index {
+  width: 800px;
 }
